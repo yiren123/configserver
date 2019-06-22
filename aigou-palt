@@ -13,9 +13,10 @@ eureka:
   instance:
     prefer-ip-address: true  #使用ip注册到注册中心
 spring:
+  profiles: dev
   application:
     name: AIGOU_PLAT
-  profiles: dev
+  
 
 ---
 server:
@@ -27,6 +28,7 @@ eureka:
   instance:
     prefer-ip-address: true  #使用ip注册到注册中心
 spring:
+  profiles: test
   application:
     name: AIGOU_PLAT
-  profiles: test
+  
